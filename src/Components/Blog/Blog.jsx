@@ -22,7 +22,7 @@ export default function Blog() {
                     <BlogComponent slug = {blogTexts[1].slug} isSave = {save_data?.includes(blogTexts[1].id)} isLike = {like_data?.includes(blogTexts[1].id)} isFirst = {blogTexts[1].isFirst}  id = {blogTexts[1].id} popular={blogTexts[1].isPopuler} last={blogTexts[1].isLast} date={blogTexts[1].date} image={blogTexts[1].image} header={blogTexts[1].header} summary={blogTexts[1].summary} />
                 </div>
                 <div className="component" id="the-first-blog">
-                    <BlogComponent slug = {blogTexts[4].slug} isSave = {save_data?.includes(blogTexts[3].id)} isLike = {like_data?.includes(blogTexts[3].id)} isFirst = {blogTexts[3].isFirst}  id = {blogTexts[3].id} popular={blogTexts[3].isPopuler} last={blogTexts[3].isLast} date={blogTexts[3].date} image={blogTexts[3].image} header={blogTexts[3].header} summary={blogTexts[3].summary} />
+                    <BlogComponent slug = {blogTexts[3].slug} isSave = {save_data?.includes(blogTexts[3].id)} isLike = {like_data?.includes(blogTexts[3].id)} isFirst = {blogTexts[3].isFirst}  id = {blogTexts[3].id} popular={blogTexts[3].isPopuler} last={blogTexts[3].isLast} date={blogTexts[3].date} image={blogTexts[3].image} header={blogTexts[3].header} summary={blogTexts[3].summary} />
                 </div>
             </div>
             <hr></hr>
