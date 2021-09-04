@@ -12,7 +12,7 @@ export default function SingleBlog() {
     const data = blogTexts.filter(blog => blog.slug === params.slug)[0]
     
     // Önerilen Blog Yazısı
-    const randomId = Math.floor(Math.random() * 7)+1;
+    const [randomId,setRandomId] = useState( Math.floor(Math.random() * 7)+1)
     const oneri_blog = blogTexts.filter(blog => blog.id === randomId)[0]
     
     const likes_data = localStorage.getItem('likes');
@@ -97,9 +97,9 @@ export default function SingleBlog() {
                                 save ? <i title="Kaydetmekten Vazgeç" className="fas fa-bookmark"></i> : <i title="Kaydet" className="far fa-bookmark"></i>
                             }
                         </span>
-                        <div className = "date">
+                        <span className = "date">
                             {data.date}
-                        </div>
+                        </span>
                     </div>
                 </div>
             </div>

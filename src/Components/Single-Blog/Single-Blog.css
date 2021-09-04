@@ -74,8 +74,14 @@
     font-size: 22px;
 }
 
-.one-blog .blog-data .save-and-like .like-button {
-    margin-right: 24px;
+.one-blog .blog-data .save-and-like .like-button{
+    width: 32px;
+    height: 32px;
+    left: 14px;
+}
+
+.one-blog .blog-data .save-and-like .like-button i{
+    cursor: pointer;
 }
 
 .one-blog .blog-data .save-and-like .date{
@@ -84,6 +90,54 @@
     text-align: right;
     padding-top: 15px;
     font-family: 'Poppins', sans-serif;
-
     font-weight: bold;
+    float: right;
+}
+
+@media only screen and (max-width:1000px) {
+    .one-blog .blog-data{
+        width: 60%;
+    }
+    .one-blog{
+        width: 100%;
+    }
+    .one-blog .oneriler{
+        width: 30%;
+        height: 410px;
+    }
+    .one-blog .blog-data .image img{
+        width:100%;
+    }
+}
+
+@media only screen and (max-width:850px) {
+    .one-blog .oneriler{
+        display: none;
+    }
+    .one-blog .blog-data{
+        width: 100%;
+    }
+    .one-blog .blog-data .image{
+        width: 100%;
+    }
+    .one-blog .blog-data .image img{
+        width:100%;
+        float:none;
+    }
+
+}
+
+@media only screen and (max-width:500px) {
+    .one-blog .blog-data .paragraph{
+        width: 100%;
+        text-align: left;
+        margin: auto;
+        font-family: 'Urbanist', sans-serif;
+    }
+    .one-blog .blog-data .save-and-like{
+        width: 100%;
+    }
+    .one-blog .blog-data .save-like-event{
+        width: 100%;
+    }
 }
