@@ -7,6 +7,7 @@ import ReactNotification from 'react-notifications-component'
 import Saved from './Components/Saved/Saved';
 import Liked from './Components/Liked/Liked';
 import { useEffect } from 'react';
+import SingleBlog from './Components/Single-Blog/SingleBlog';
 function App() {
 
   let history = useHistory();
@@ -32,6 +33,9 @@ function App() {
           </Route>
           <Route exact path="/blog">
             <Blog />
+          </Route>
+          <Route exact path = "/blog/:slug">
+            <SingleBlog />
           </Route>
           <Route exact path="/saved">
             <Saved />

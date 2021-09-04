@@ -19,8 +19,6 @@ export const blogTexts = [
         isLast: true,
         isFirst:false,
         slug:"lorem-ipsum-nedir",
-        isLike:false,
-        isSave:false,
 
     },
     {
@@ -33,8 +31,6 @@ export const blogTexts = [
         isLast: false,
         isFirst:false,
         slug:"neden-kullaniriz",
-        isLike:false,
-        isSave:false,
 
     },
     {
@@ -47,8 +43,6 @@ export const blogTexts = [
         isLast: false,
         isFirst:false,
         slug: "nereden-gelir",
-        isLike:false,
-        isSave:false,
     },
     {
         id: 4,
@@ -60,8 +54,6 @@ export const blogTexts = [
         isLast: false,
         isFirst:true,
         slug: "nereden-bulabilirim",
-        isLike:false,
-        isSave:false,
     },
     {
         id: 5,
@@ -73,8 +65,6 @@ export const blogTexts = [
         isLast: false,
         isFirst:false,
         slug: "what-is-lorem-ipsum",
-        isLike:false,
-        isSave:false,
 
     },
     {
@@ -87,8 +77,6 @@ export const blogTexts = [
         isLast: false,
         isFirst:false,
         slug: "why-do-we-use-it",
-        isLike:false,
-        isSave:false,
 
 
     },
@@ -102,8 +90,6 @@ export const blogTexts = [
         isLast: false,
         isFirst:false,
         slug: "where-does-it-come-from",
-        isLike:false,
-        isSave:false,
 
     },
     {
@@ -115,9 +101,7 @@ export const blogTexts = [
         isPopuler: false,
         isLast: false,
         isFirst:false,
-        slug: "Nereden Bulabilirim?",
-        isLike:false,
-        isSave:false,
+        slug: "where-can-i-get-some",
 
     }
 ]

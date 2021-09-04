@@ -10,7 +10,7 @@ export default function BlogComponent(props) {
     let [save, setSave] = useState(false);
     let [like, setLike] = useState(false);
     const history = useHistory()
-    
+
 
     let createNotification = (title, message, type) => {
         store.addNotification({
@@ -53,77 +53,77 @@ export default function BlogComponent(props) {
             })
         }
         localStorage.setItem('likes', JSON.stringify(like_data))
-}
-
-let saveEvent = async (id) => {
-    await setSave(!save)
-    const save_data = JSON.parse(localStorage.getItem('saves'))
-    if (save === false) {
-        save_data.push(id)
-        createNotification("Kaydedildi", "Kaydedilenler Listesine Eklendi", "success")
-
     }
-    else {
-        save_data.forEach((save, index) => {
-            if (save === id) {
-                save_data.splice(index, 1)
-            }
-        })
+
+    let saveEvent = async (id) => {
+        await setSave(!save)
+        const save_data = JSON.parse(localStorage.getItem('saves'))
+        if (save === false) {
+            save_data.push(id)
+            createNotification("Kaydedildi", "Kaydedilenler Listesine Eklendi", "success")
+
+        }
+        else {
+            save_data.forEach((save, index) => {
+                if (save === id) {
+                    save_data.splice(index, 1)
+                }
+            })
+        }
+        localStorage.setItem('saves', JSON.stringify(save_data))
     }
-    localStorage.setItem('saves', JSON.stringify(save_data))
-}
-return (
-    <div className="blog-component">
+    return (
+        <div className="blog-component">
 
-        <div className="blog-image">
-            <img src={props.image}></img>
-            <span className="date">
-                {props.date}
-            </span>
+            <div className="blog-image">
+                <img src={props.image}></img>
+                <span className="date">
+                    {props.date}
+                </span>
 
-            {
-                props.popular === true ? <span className="popular">
-                    En Popüler
-                </span> : ""
-            }
+                {
+                    props.popular === true ? <span className="popular">
+                        En Popüler
+                    </span> : ""
+                }
 
-            {
-                props.last === true ? <span className="last">
-                    Son Yüklenen
-                </span> : ""
-            }
+                {
+                    props.last === true ? <span className="last">
+                        Son Yüklenen
+                    </span> : ""
+                }
 
-            {
-                props.isFirst === true ? <span className="first">
-                    İlk Yüklenen
-                </span> : ""
-            }
-        </div>
-        <div className="blog-summary">
-            <Link to={`/blog/${props.slug}`}>
+                {
+                    props.isFirst === true ? <span className="first">
+                        İlk Yüklenen
+                    </span> : ""
+                }
+            </div>
+            <div className="blog-summary">
+                <Link to={`/blog/${props.slug}`}>
 
-                <div className="header">
-                    {props.header}
+                    <div className="header">
+                        {props.header}
+                    </div>
+                </Link>
+
+                <div className="summary">
+                    {props.summary}
                 </div>
-            </Link>
-
-            <div className="summary">
-                {props.summary}
+            </div>
+            <div className="more-then-button">
+                <button onClick={() => { history.push(`/blog/${props.slug}`) }}>Daha Fazlası <FontAwesomeIcon className="icon" icon={faArrowRight} /></button>
+                <span className="like-button" onClick={() => { likeEvent(props.id) }}>
+                    {
+                        like ? <i title="Beğenmekten Vazgeç" className="fas fa-heart"></i> : <i title="Beğen" className="far fa-heart"></i>
+                    }
+                </span>
+                <span className="save-button" title="Yazıyı Kaydet" onClick={() => { saveEvent(props.id) }}>
+                    {
+                        save ? <i title="Kaydetmekten Vazgeç" className="fas fa-bookmark"></i> : <i title="Kaydet" className="far fa-bookmark"></i>
+                    }
+                </span>
             </div>
         </div>
-        <div className="more-then-button">
-            <button onClick={() => { history.push(`/blog/${props.slug}`) }}>Daha Fazlası <FontAwesomeIcon className="icon" icon={faArrowRight} /></button>
-            <span className="like-button" onClick={() => { likeEvent(props.id) }}>
-                {
-                    like ? <i title="Beğenmekten Vazgeç" className="fas fa-heart"></i> : <i title="Beğen" className="far fa-heart"></i>
-                }
-            </span>
-            <span className="save-button" title="Yazıyı Kaydet" onClick={() => { saveEvent(props.id) }}>
-                {
-                    save ? <i title="Kaydetmekten Vazgeç" className="fas fa-bookmark"></i> : <i title="Kaydet" className="far fa-bookmark"></i>
-                }
-            </span>
-        </div>
-    </div>
-)
+    )
 }
