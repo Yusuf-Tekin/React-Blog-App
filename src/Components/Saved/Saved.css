@@ -1,0 +1,26 @@
+.saved {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 75px;
+}
+
+.saved .saved-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.saved .saved-list .saved-blog-text{
+    width: 320px;
+    margin-top: 20px;
+    margin-left: 10px;
+    height: 410px;
+}
+
+.notfound{
+    text-align: center;
+    background-color: tomato;
+    padding: 12px;
+    color: white;
+    border-radius: 6px;
+    width: 100%;
+}

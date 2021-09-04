@@ -1,0 +1,127 @@
+*{
+    text-decoration:none;
+}
+
+.blog{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.blog .top {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.blog .top .back-comp{
+    background-image: url('../../img/blog-back.jpg');
+    height: 90%;
+    width: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    filter: brightness(50%);
+}
+.blog .top .component{
+    width: 275px;
+    height: 410px;
+    margin-top: 30px;
+}
+
+.blog .blog-lists{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    margin-top: 7.5rem;
+    height: 100%;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+
+}
+
+.blog .blog-lists .single-blog{
+    width: 300px;
+    height: 410px;
+    margin-top: 15px;
+}
+
+blog .saved-and-liked-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+}
+
+.saved-and-liked-button span{
+    padding: 8px;
+    border-radius: 4px;
+    margin-right: 15px;
+    width: 32px;
+    cursor: pointer;
+} 
+.saved-and-liked-button .save{
+    color: white;
+    background-color: #434c5d;
+    box-shadow: 0px 0px gpx #434c5d;
+    
+}
+.saved-and-liked-button .like{
+    color: white;
+    background-color: #FF4848;
+    box-shadow: 0px 0px 15px #FF4848;
+    
+}
+.saved-and-liked-button .main-page{
+    color: white;
+    background-color: #00C1D4;
+}
+
+
+@media only screen and (max-width:824px) {
+    .blog .top .back-comp{
+        height: 190vh;
+    }
+
+    .blog .top .component {
+        width: 70%;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .blog .blog-lists .single-blog{
+        margin-top: 20px;
+        width: 70%;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width:549px) {
+    .blog .top .back-comp{
+        height: 200vh;
+        width: 100%;
+    }
+    .blog .top {
+        width: 100%;
+    }
+    .blog .top .component{
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+
+
+@media only screen and (max-width:365px) {
+    .saved-and-liked-button{
+        top: 40px;
+    }
+}

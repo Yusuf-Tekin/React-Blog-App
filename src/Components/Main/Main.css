@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+.background{
+    background-image: url('../../img/main-back.png');
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    top: 0;
+    filter: brightness(50%);
+}
+
+.center-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+}
+
+.center-text span{
+    font-size: 78px;
+    color: white;
+    font-family: 'Balsamiq Sans', cursive;
+        color: #FFF5AB;
+}
+
+
+.main .social-media-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .social-media-links .links{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main .social-media-links .links a{
+    margin:10px ;
+}
+
+.main .social-media-links .links a .accounts img{
+    width: 18px;
+    height: 18px;
+    background-color: #DDDDDD;
+    padding: 12px;
+    border-radius: 12px;
+    transition: 0.4s;
+}
+
+.main .social-media-links .links a .accounts img:hover{
+    background-color: #C8C6C6;
+}
+.social-media-links .links button{
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.5s;
+    background-color: #F7F6F2;
+}
+
+.social-media-links .links button #icon{
+    margin-left: 5px;
+}
+
+.social-media-links .links button:hover{
+    background-color: #C8C6C6;
+}
+
+.programming-languages{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.programming-languages .langs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.programming-languages .langs .lang{
+    margin: 8px;
+}
+
+.programming-languages .langs .lang img:hover{
+    width: 36px;
+    height: 36px;
+
+}
+.programming-languages .langs .lang img{
+    width: 32px;
+    height: 32px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.programming-languages .langs .lang #firebase{
+    width: 42px;
+    height: 42px;
+}
+
+
+@media only screen and  (max-width:547px) {
+    .main .social-media-links .links{
+        width: 75%;
+    }
+    .center-text span{
+        font-size: 48px;
+    }
+}

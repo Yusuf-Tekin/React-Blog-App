@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+
+.blog-component{
+    height:100%;
+    background-color: #EAEAF8;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px #515E63;
+    margin: 15px;
+    margin-top: 20px;
+    position: relative;
+    color: #434C5D;
+
+}
+
+.blog-component .blog-image{
+    width: 100%;
+    height: 125px;
+    position: relative;
+}
+.blog-component .blog-image img{
+    width: 100%;
+    height: 125px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+
+}
+.blog-component .blog-summary{
+    height: 225px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.blog-component .blog-summary .header{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #434C5D;
+
+}
+
+.blog-component .blog-summary .summary{
+    text-align: left;
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 11px;
+    line-height: 2;
+    
+}
+.blog-component .more-then-button {
+    position: relative;
+}
+.blog-component .more-then-button button{
+    padding: 8px;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+    border:none;
+    outline: none;
+    background-color: #434C5D;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    transition: 0.4s;
+
+}
+.blog-component .more-then-button button:hover{
+    background-color: #353c49;
+}
+.blog-component .more-then-button button .icon{
+    margin-left: 5px;
+}
+
+
+.blog-component .blog-image .date{
+    background-color: #2C2E43;
+    position: absolute;
+    left: 0px;
+    padding: 4px;
+    font-size: 11px;
+    border-bottom-left-radius: 6px;
+    bottom: 0px;
+    color: white;
+    border-top-right-radius: 6px;
+    font-family: 'Kanit', sans-serif;
+}
+.blog-component .blog-image .popular{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: #F8485E;
+    font-size: 11px;
+    font-family: 'Kanit', sans-serif;
+    border-top-right-radius: 6px;
+    padding: 4px;
+    border-bottom-left-radius: 6px;
+    color: white;
+
+}
+
+.blog-component .blog-image .last{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: #7C83FD;
+    font-size: 11px;
+    font-family: 'Kanit', sans-serif;
+    border-top-right-radius: 6px;
+    padding: 4px;
+    border-bottom-left-radius: 6px;
+    color: white;
+
+}
+.blog-component
+ .more-then-button .like-button{
+     position: absolute;
+     left: 20px;
+     top: 21px;
+ }
+.blog-component
+ .more-then-button .like-button i{
+     color: #FF2442;
+     font-size: 18px;
+     transition: 0.5s;
+ }
+ .blog-component .more-then-button .save-button{
+     position: absolute;
+     left: 50px;
+     top: 21px;
+     transition: 0.5s;
+
+ }
+
+ .blog-component .more-then-button .save-button i{
+    color: #434C5D;
+    font-size: 18px;
+
+ }
+
+ .first{
+     background-color: #865439;
+     position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 11px;
+    font-family: 'Kanit', sans-serif;
+    border-top-right-radius: 6px;
+    padding: 4px;
+    border-bottom-left-radius: 6px;
+    color: white;
+ }
+
+ @media only screen and (max-width:824px) {
+    .blog-component{
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width:549px) {
+    
+    .blog-component{
+        width: 118%;
+    }
+}
