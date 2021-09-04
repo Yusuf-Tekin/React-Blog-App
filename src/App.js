@@ -31,7 +31,7 @@ function App() {
             <Main />
           </Route>
           <Route exact path="/blog">
-            <Blog like_data={getLikesStorage} save_data = {getSavesStorage} />
+            <Blog />
           </Route>
           <Route exact path="/saved">
             <Saved />
