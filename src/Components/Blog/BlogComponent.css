@@ -122,8 +122,8 @@
 }
  .like-button{
      position: absolute;
-     left: 20px;
-     top: 21px;
+     left: 17px;
+     top: 18px;
      cursor: pointer;
  }
  .like-button i{
@@ -132,8 +132,8 @@
  }
  .save-button{
      position: absolute;
-     left: 50px;
-     top: 21px;
+     left: 43px;
+     top: 18px;
      transition: 0.5s;
      cursor: pointer;
 
@@ -169,5 +169,72 @@
     
     .blog-component{
         width: 118%;
+    }
+}
+
+.blog-component .blog-image #popular-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 48px;
+}
+
+.blog-component .more-then-button .like-button #like-icon{
+    width: 64px;
+    height: 64px;
+}
+
+.heartbeat {
+ 
+    animation: heartbeat 1.5s ease-in-out infinite both;
+    transform-origin: center center;
+}
+
+@keyframes heartbeat {
+from { 
+    transform: scale(1); 
+    
+    animation-timing-function: ease-out;
+}
+10% { 
+    transform: scale(0.91); 
+    animation-timing-function: ease-in;
+}
+17% { 
+    transform: scale(0.98); 
+    animation-timing-function: ease-out;
+}
+33% {  
+    transform: scale(0.87); 
+    animation-timing-function: ease-in;
+}
+45% { 
+    transform: scale(1); 
+    animation-timing-function: ease-out;
+}
+}
+
+
+
+
+.animated-bookmark{
+    animation-name: bookmark;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bookmark {
+    0%{
+        width: 24px;
+        height: 24px;
+    }
+    50%{
+        width: 26px;
+        height: 26px;
+    }
+    100%{
+        width: 24px;
+        height: 24px;
     }
 }
