@@ -214,12 +214,3 @@ from {
     animation-timing-function: ease-out;
 }
 }
-
-
-
-
-.animated-bookmark{
-    animation-name: bookmark;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
