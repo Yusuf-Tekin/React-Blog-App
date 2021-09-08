@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 .one-blog{
     display: flex;
@@ -41,7 +41,8 @@
     width: 70%;
     text-align: left;
     margin: auto;
-    font-family: 'Urbanist', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    word-spacing: 6px;
 }
 
 .one-blog .blog-data .paragraph .header{

@@ -4,6 +4,7 @@ import './Blog.css'
 import { blogTexts } from '../Datas/data'
 import { Link } from 'react-router-dom';
 import Loader from '../../img/loader.gif'
+import ReactPaginate from 'react-paginate';
 
 export default function Blog() {
 
@@ -14,7 +15,7 @@ export default function Blog() {
 
     setInterval(() => {
         setLoading(false)
-    }, 3500);
+    }, 1500);
 
     return (
         <div className="blog">

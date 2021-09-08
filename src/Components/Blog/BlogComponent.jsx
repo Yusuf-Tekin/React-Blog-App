@@ -60,7 +60,7 @@ export default function BlogComponent(props) {
         localStorage.setItem('likes', JSON.stringify(like_data))
     }
 
-    let saveEvent = async (id) => {
+    let saveEvent = async (e,id) => {
         await setSave(!save)
         const save_data = JSON.parse(localStorage.getItem('saves'))
         if (save === false) {
@@ -70,6 +70,7 @@ export default function BlogComponent(props) {
         }
         else {
             save_data.forEach((save, index) => {
+                console.log(save)
                 if (save === id) {
                     save_data.splice(index, 1)
                 }
@@ -130,7 +131,7 @@ export default function BlogComponent(props) {
                         </svg>
                     }
                 </span>
-                <span className="save-button" title="Yazıyı Kaydet" onClick={() => { saveEvent(props.id) }}>
+                <span className="save-button" title="Yazıyı Kaydet" onClick={(e) => { saveEvent(e,props.id) }}>
                     {
                         save === false ? <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bookmark animated-bookmark" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
