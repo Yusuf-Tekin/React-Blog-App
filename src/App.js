@@ -40,9 +40,6 @@ function App() {
           <Route exact path="/saved">
             <Saved />
           </Route>
-          <Route exact path="/liked">
-            <Liked />
-          </Route>
         </Switch>
       </Router>
     </div>
