@@ -29,7 +29,6 @@ export default function Navbar() {
             <div className="saved-and-liked-button">
                 <Link to="/main"><span className="main-page" title="Anasayfa'ya Dön"><i style={{ color: "white" }} class="fas fa-home"></i></span></Link>
                 <Link to="/saved"><span className="save" title="Kaydedilen Blog Yazıları"><i style={{ color: "white" }} class="fas fa-bookmark"></i></span></Link>
-                <Link to="/liked"><span className="like" title="Beğenilen Blog Yazıları"><i class="fas fa-heart"></i></span></Link>
             </div>
             <div className="menu-icon" style={{ display: width < 366 ? "block" : "none" }} onClick={ChangeMenu}>
                 <img src={Menu}></img>
@@ -38,7 +37,6 @@ export default function Navbar() {
                 <div>
                     <span id = "head">Menü</span>
                     <span><Link id="link-mobil-menu" to="/main" onClick={() => { setMenu(false) }}>Anasayfa</Link></span>
-                    <span><Link id="link-mobil-menu" to="/liked" onClick={() => { setMenu(false) }} >Beğeniler</Link></span>
                     <span><Link id="link-mobil-menu" to="/saved" onClick={() => { setMenu(false) }}>Kaydedilenler</Link></span>
                 </div>
             </div>
